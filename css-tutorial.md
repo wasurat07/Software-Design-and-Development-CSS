@@ -232,9 +232,25 @@ div > p {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/CSS/lab-2.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item" >หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/de7ba50b-e032-4f76-8f99-bea2aca25f54)
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
