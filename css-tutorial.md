@@ -394,9 +394,126 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/CSS/lab-3.css">
+</head>
+<body>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images\products\Rimuru.jpg" alt="Rimuru">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Rimuru</h2>
+                <p class="product-price">฿60</p>
+                <p class="product-description">
+                    พวงกุญแจอนิเมะ Rimuru จากเรื่อง <br>tensei shitara slime datta ken
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images\products\Shuna.jpg" alt="Shuna">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Shuna</h2>
+                <p class="product-price">฿60</p>
+                <p class="product-description">
+                    พวงกุญแจอนิเมะ Shuna จากเรื่อง <br>tensei shitara slime datta ken
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images\products\Millim.jpg" alt="Millim">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Millim</h2>
+                <p class="product-price">฿60</p>
+                <p class="product-description">
+                    พวงกุญแจอนิเมะ Millim จากเรื่อง <br>tensei shitara slime datta ken
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images\products\Shion.jpg" alt="Shion">
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Shion</h2>
+                <p class="product-price">฿60</p>
+                <p class="product-description">
+                    พวงกุญแจอนิเมะ Shion จากเรื่อง <br>tensei shitara slime datta ken
+                </p>
+                <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+            </div>
+        </div>
+</body>
+</html>
+```
+```css
+.product-card {
+    display: inline-block;
+    width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-image: url('product.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    color: #8A2BE2;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product-button {
+    display: block;
+    background: linear-gradient(to right, #FF8C00, #FFA500);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.product-button:hover {
+    background: linear-gradient(to right, #FF6347, #FF4500);
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/40274f52-6940-43ad-b617-8ec448cc11bb)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
