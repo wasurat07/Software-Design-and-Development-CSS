@@ -249,8 +249,48 @@ div > p {
 </body>
 </html>
 ```
+```css
+/* การใช้ Element Selector */
+nav {
+    background-color: #FF6600;
+    padding: 15px;
+}
+
+/* การใช้ Descendant Selector */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* การใช้ Child Selector */
+nav > ul > li {
+    margin: 0 10px;
+}
+
+/* การใช้ Class Selector */
+.menu-item {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* การใช้ Pseudo-class */
+.menu-item:hover {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+/* การใช้ ID Selector */
+#active {
+    background-color: #007bff;
+    border-radius: 3px;
+}
+```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-![image](https://github.com/user-attachments/assets/de7ba50b-e032-4f76-8f99-bea2aca25f54)
+![image](https://github.com/user-attachments/assets/96be2cfa-c934-4786-af66-e849a05aa4d2)
+
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
