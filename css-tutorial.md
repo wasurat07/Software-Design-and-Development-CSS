@@ -795,12 +795,123 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/CSS/lab-5.css">
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">วิธีการเขียนบทความที่น่าสนใจ</h1>
+            <div class="post-meta">โพสต์เมื่อ 11 กุมภาพันธ์ 2025 | โดย นายวสุรัตน์ มณีรัตนะพร</div>
+        </header>
+        
+        <div class="post-content">
+            <p>เนื้อหาบทความที่ดีควรมีความน่าสนใจและเป็นประโยชน์ต่อผู้อ่าน การเขียนบทความให้น่าอ่านนั้นมีหลักการสำคัญหลายประการ</p>
+
+            <h2>1. การเลือกหัวข้อที่น่าสนใจ</h2>
+            <p>หัวข้อที่ดีควรตรงกับความสนใจของกลุ่มเป้าหมาย และมีประโยชน์ต่อผู้อ่าน</p>
+
+            <blockquote>
+                "การเขียนที่ดีไม่ได้เกิดจากพรสวรรค์เพียงอย่างเดียว แต่เกิดจากการฝึกฝนอย่างสม่ำเสมอ"
+            </blockquote>
+
+            <h2>2. การจัดโครงสร้างเนื้อหา</h2>
+            <p>เนื้อหาที่ดีควรมีการจัดลำดับที่เป็นระบบ เข้าใจง่าย และมีความต่อเนื่อง</p>
+        </div>
+    </article>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* เรียกใช้งานฟอนต์จาก Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Roboto', sans-serif; /* ฟอนต์หลักสำหรับเนื้อหา */
+    background: linear-gradient(135deg, #FF6F61, #FFB75E); /* ไล่สีจากส้มแดงไปเหลือง */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.post-title {
+    font-family: 'Poppins', sans-serif; /* ฟอนต์สำหรับหัวข้อ */
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ข้อความ */
+}
+
+.post-meta {
+    color: #f1f1f1;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.post-content {
+    font-family: 'Roboto', sans-serif; /* ฟอนต์หลักสำหรับเนื้อหา */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+    font-family: 'Poppins', sans-serif; /* ฟอนต์สำหรับหัวข้อย่อย */
+    font-size: 1.8rem;
+    color: #FF6F61;
+    margin: 2rem 0 1rem;
+    border-bottom: 2px solid #FF6F61;
+}
+
+blockquote {
+    font-family: 'Roboto', sans-serif; /* ฟอนต์สำหรับ blockquote */
+    font-style: italic;
+    border-left: 6px solid #007bff;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    color: #555;
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 2.2rem;
+    }
+
+    .post-content {
+        padding: 15px;
+    }
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/50945d83-6193-4618-83cc-52fee6e335b3)
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
