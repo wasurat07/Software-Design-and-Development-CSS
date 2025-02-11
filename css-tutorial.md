@@ -1053,12 +1053,123 @@ blockquote {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/lab-6.css">
+</head>
+<body>
+    <div class="product-grid">
+        <!-- สินค้าชิ้นที่ 1 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/Hinata.png')"></div>
+            <div class="product-details">
+                <h3 class="product-title">Hinata</h3>
+                <div class="product-price">฿60</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- สินค้าชิ้นที่ 2 -->
+        <div class="product-card">
+            <div class="product-image" style="background-image: url('images/products/Izawa.png')"></div>
+            <div class="product-details">
+                <h3 class="product-title">Izawa</h3>
+                <div class="product-price">฿60</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- เพิ่มสินค้าอื่นๆ ตามต้องการ -->
+    </div>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* ลดขนาดสินค้า */
+    gap: 10px; /* ลดช่องว่างระหว่างสินค้า */
+    padding: 10px;
+    max-width: 900px; /* ลดขนาดความกว้างของตาราง */
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    padding: 8px; /* ลดช่องว่างภายในสินค้า */
+}
+
+.product-image {
+    width: 100%;
+    height: 120px; /* ลดขนาดของภาพสินค้า */
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-details {
+    padding: 8px; /* ลดช่องว่างภายใน */
+}
+
+.product-title {
+    font-size: 0.9rem; /* ลดขนาดฟอนต์ของชื่อสินค้า */
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1rem; /* ลดขนาดฟอนต์ของราคา */
+    color: #007bff;
+    font-weight: bold;
+}
+
+.product-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px; /* ลดช่องว่างด้านบน */
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 10px; /* ลดขนาดปุ่ม */
+    font-size: 0.8rem; /* ลดขนาดตัวอักษรปุ่ม */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* ลดขนาดขั้นต่ำในหน้าจอเล็ก */
+    }
+
+    .product-image {
+        height: 100px; /* ลดความสูงของภาพสินค้า */
+    }
+
+    .product-title {
+        font-size: 0
+    }
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/2ac0d0e1-1cde-4635-8b83-6b3321542894)
+
 
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
